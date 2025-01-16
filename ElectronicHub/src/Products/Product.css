@@ -1,0 +1,92 @@
+.item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+  padding-left: 4.7rem;
+  gap: 20px;
+  padding-top: 2rem;
+}
+
+.item1 {
+  width: 100%;
+  max-width: 300px; /* Ensures the cards don't grow too large */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item1 img:hover {
+  transform: scale(1.005);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px,
+    rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.item1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.item1 h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.item1 .description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.item1 .price {
+  font-size: 1.2rem;
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.item1 .buy-now {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item1 .buy-now:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and smaller screens (2 columns) */
+@media (max-width: 1024px) {
+  .item {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 2rem;
+    gap: 15px;
+  }
+}
+
+/* Mobile screens (1 column) */
+@media (max-width: 768px) {
+  .item {
+    grid-template-columns: 1fr;
+    padding-left: 1rem;
+    gap: 10px;
+  }
+
+  .item1 {
+    max-width: 90%; /* Ensure the cards fit well on mobile */
+    margin: 0 auto; /* Center align the cards */
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-light-gray: #DADDE2;
+  --color-gray: #B1BDC5;
+  --color-steel-blue: #889FA5;
+  --color-dark-teal: #628281;
+  --color-deep-green: #43655A;
+}
+
+
+
+
+.white{
+    background-color: #fff;
+}
+
+.gray{
+    background-color: gray;
+}
