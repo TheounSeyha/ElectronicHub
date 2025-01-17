@@ -18,11 +18,12 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.item1 img:hover {
+.item1:hover {
   transform: scale(1.005);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px,
     rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    
 }
 
 .item1 img {
@@ -50,6 +51,7 @@
   font-weight: bold;
   margin-bottom: 16px;
 }
+
 
 .item1 .buy-now {
   background-color: #007bff;
