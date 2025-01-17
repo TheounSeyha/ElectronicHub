@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -17,21 +18,30 @@ function NavScrollExample() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#products">Products</Nav.Link>
+            <Nav.Link as={Link} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/About">
+              About
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Contact">
+              Contact
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Product">
+              Products
+            </Nav.Link>
             <NavDropdown title="Categories" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#smartphones">
+              <NavDropdown.Item as={Link} to="/smartphones">
                 Smartphones
               </NavDropdown.Item>
-              <NavDropdown.Item href="#laptops">Laptops</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Laptops">
+                Laptops
+              </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#accessories">
+              <NavDropdown.Item as={Link} to="/Accessories">
                 Accessories
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#contact" disabled>
-              Contact Us
-            </Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

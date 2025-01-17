@@ -1,5 +1,8 @@
 function Laptop() {
-  return <div>Laptop</div>;
+  return <div>
+    <h1></h1>
+  </div>;
+
 }
 
 export default Laptop;
